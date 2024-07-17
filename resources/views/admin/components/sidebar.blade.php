@@ -1,7 +1,9 @@
-<aside class="sidebar navbar navbar-expand-lg bg-dark d-flex flex-column gap-4 align-content-lg-center mx-2 my-2 rounded">
+<aside
+    class="sidebar navbar navbar-expand-lg bg-dark d-flex flex-column gap-4 align-content-lg-center mx-2 my-2 rounded">
     <h5 class="navbar-brand">Grosir Online</h5>
+    {{-- <hr class="" style="color: white;font-weight:800"> --}}
     <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
-        <ul class="navbar-nav d-flex flex-column gap-3 px-2">
+        <ul class="navbar-nav flex-column gap-3 px-2">
             <li class="navbar-item rounded {{ Request::path() === 'admin/dashboard' ? 'bg-info' : '' }} ">
                 <a href="dashboard" class="text-white">
                     <div class="d-flex gap-3">
@@ -18,11 +20,11 @@
                     </div>
                 </a>
             </li>
-            <li class="navbar-item rounded {{ Request::path() === 'admin/user_management' ? 'bg-info' : '' }} ">
-                <a href="user_management" class="">
+            <li class="navbar-item rounded {{ Request::path() === 'admin/transaksi' ? 'bg-info' : '' }} ">
+                <a href="transaksi" class="">
                     <div class="d-flex gap-3">
-                        <span class="material-icons">people_alt</span>
-                        <p class="m-0 p-0">User Management</p>
+                        <span class="material-icons">receipt_long</span>
+                        <p class="m-0 p-0">Transaksi</p>
                     </div>
                 </a>
             </li>
@@ -31,6 +33,14 @@
                     <div class="d-flex gap-3">
                         <span class="material-icons">analytics</span>
                         <p class="m-0 p-0">Report</p>
+                    </div>
+                </a>
+            </li>
+            <li class="navbar-item rounded {{ Request::path() === 'admin/user_management' ? 'bg-info' : '' }} ">
+                <a href="user_management" class="">
+                    <div class="d-flex gap-3">
+                        <span class="material-icons">people_alt</span>
+                        <p class="m-0 p-0">User Management</p>
                     </div>
                 </a>
             </li>
@@ -44,4 +54,4 @@
             </li>
         </ul>
     </div>
- </aside>
+</aside>

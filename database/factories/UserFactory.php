@@ -23,11 +23,11 @@ class UserFactory extends Factory
             'password'  => bcrypt('123'),
             'nik'       => date('Ymd').rand(000,999),
             'alamat'    => fake()->address(),
-            'tlpn'      => fake()->phoneNumber(),
+            'tlp'       => fake()->phoneNumber(),
             'role'      => rand(0,1),
-            'tgllahir'  => fake()->date('Y-m-d','now'),
+            'tglLahir'  => fake()->date('Y-m-d','now'),
             'is_active' => 1,
-            'is_member' => 0,
+            'is_mamber' => 0,
             'is_admin'  => 1,
         ];
     }

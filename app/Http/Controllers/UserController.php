@@ -36,11 +36,11 @@ class UserController extends Controller
         $data->email        = $request->email;
         $data->password     = bcrypt($request->password);
         $data->alamat       = $request->alamat;
-        $data->tlpn          = $request->tlpn;
+        $data->tlp          = $request->tlp;
         $data->role         = $request->role;
-        $data->tgllahir     = $request->tgllahir;
+        $data->tglLahir     = $request->tglLahir;
         $data->is_active    = 1;
-        $data->is_member    = 0;
+        $data->is_mamber    = 0;
         $data->is_admin     = 1;
 
         // dd($request);die;
@@ -86,8 +86,8 @@ class UserController extends Controller
             'email'                 => $request->email,
             'password'              => bcrypt($request->password),
             'alamat'                => $request->alamat,
-            'tlpn'                   => $request->tlpn,
-            'tgllahir'              => $request->tgllahir,
+            'tlp'                   => $request->tlp,
+            'tglLahir'              => $request->tglLahir,
             'role'                  => $request->role,
             'foto'                  => $filename,
         ];
@@ -116,11 +116,11 @@ class UserController extends Controller
         $data->email        = $request->email;
         $data->password     = bcrypt($request->password);
         $data->alamat       = $request->alamat . " " . $request->alamat2;
-        $data->tlpn          = $request->tlpn;
+        $data->tlp          = $request->tlp;
         $data->role         = 0;
-        $data->tgllahir     = $request->date;
+        $data->tglLahir     = $request->date;
         $data->is_active    = 1;
-        $data->is_member    = 1;
+        $data->is_mamber    = 1;
         $data->is_admin     = 0;
 
         // dd($request);die;
@@ -161,6 +161,7 @@ class UserController extends Controller
             return back();
         }
     }
+
     public function logout()
     {
         Auth::logout();

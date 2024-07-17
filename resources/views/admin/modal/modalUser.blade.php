@@ -46,15 +46,15 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="tlpn" class="col-sm-5 col-form-label">Telphone Karyawan</label>
+                        <label for="tlp" class="col-sm-5 col-form-label">Telphone Karyawan</label>
                         <div class="col-sm-7">
-                            <input type="text" class="form-control" id="tlpn" name="tlpn">
+                            <input type="text" class="form-control" id="tlp" name="tlp">
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="tgllahir" class="col-sm-5 col-form-label">Tanggal lahir</label>
+                        <label for="tglLahir" class="col-sm-5 col-form-label">Tanggal lahir</label>
                         <div class="col-sm-7">
-                            <input type="date" class="form-control" id="tgllahir" name="tgllahir">
+                            <input type="date" class="form-control" id="tglLahir" name="tglLahir">
                         </div>
                     </div>
                     <div class="mb-3 row">

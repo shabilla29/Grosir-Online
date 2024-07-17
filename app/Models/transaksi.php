@@ -12,13 +12,13 @@ class transaksi extends Model
     public $timestamps = true;
     protected $fillable = [
         'code_transaksi',
-        'sku_transaksi',
         'total_qty',
         'total_harga',
         'nama_customer',
         'alamat',
-        'no_tlpn',
+        'no_tlp',
         'ekspedisi',
+        'status',
     ];
     protected $hidden;
 }

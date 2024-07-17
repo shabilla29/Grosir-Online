@@ -23,12 +23,11 @@ class User extends Authenticatable
         'password',
         'foto',
         'alamat',
-        'tlpn',
-        'tgllahir',
-        'role',
+        'tlp',
+        'tglLahir',
         'is_active',
         'is_admin',
-        'is_member',
+        'is_mamber',
     ];
 
     /**

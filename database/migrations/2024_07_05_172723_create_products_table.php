@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('nama_product');
             $table->string('type');
             $table->string('kategory');
-            $table->biginteger('harga');
+            $table->bigInteger('harga');
             $table->float('discount');
             $table->integer('quantity');
             $table->integer('quantity_out')->default(0);

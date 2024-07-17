@@ -19,11 +19,11 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->integer('is_admin')->default(1);
-            $table->boolean('is_member')->default(1);
+            $table->boolean('is_mamber')->default(1);
             $table->string('foto')->default('default.png');
             $table->string('alamat');
-            $table->string('tlpn');
-            $table->date('tgllahir');
+            $table->string('tlp');
+            $table->date('tglLahir');
             $table->boolean('is_active')->default(1);
             $table->integer('role');
             $table->rememberToken();

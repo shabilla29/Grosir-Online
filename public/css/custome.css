@@ -1,75 +1,107 @@
-*{
-    font-family: 'Poopins', sans-serif;
+* {
+    font-family: "Poppins", sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* background-color: rgb(187, 187, 187); */
+    /* background-color: rgb(197, 197, 197); */
 }
-main{
+main {
     background-color: #DAD3BE;
     min-height: 100vh;
-    overflow:hidden;
+    overflow: hidden;
+}
+/* .icon-nav {
+    position: relative;
+    color: #FFFFFF8C;
+}
+.icon-nav:hover {
+    color: white;
+} */
+
+.text-links {
+    cursor: pointer;
 }
 
-.circle{
+.links-login {
     position: absolute;
-    border-radius: 50%;
-    background-color: rgba(254, 44, 44, 0.708);
-    color: white;
-    text-align: center;
-    font-size: 10px;
-    top: -5px;
-    right: -10px;
-    padding:2px 5px;;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #254336;
+    padding: 10px;
+    width: 200px;
+    z-index: 9999;
+    border-radius: 10px;
+    visibility: hidden;
 }
- .notif{
+
+.activeLogin {
+    visibility: visible;
+    opacity: 1;
+}
+
+.links-login > a:hover {
+    color: #fa9191;
+}
+
+.links-login > a {
+    color: #fff;
+}
+
+.circle {
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    border-radius: 50%;
+    background-color: rgba(249, 32, 32, 0.86);
+    color: white;
+    font-size: 12px;
+    padding: 2px 9px;
+}
+.notif {
     position: relative;
     display: inline-block;
- }
-
- .fa-bag-shopping{
+}
+.fa-bag-shopping {
     font-size: 24px;
     color: rgba(249, 249, 249, 0.686);
- }
-
- .fa-bag-shopping:hover {
+}
+.fa-bag-shopping:hover {
     color: rgba(255, 255, 255, 0.867);
 }
 
-section{
+section {
     min-height: 80vh;
 }
 
 /* style footer */
-footer{
+footer {
     position: static;
     bottom: 0;
-    background-color: #254336;
+    background-color:  #254336;
     color: white;
 }
 
-
 /* sidebar */
-.sidebar{
+.sidebar {
     position: fixed;
     width: 250px;
-    height: 97vh;  
-
+    height: 97vh;
 }
-.sidebar a{
+.sidebar a {
     text-decoration: none;
     color: white;
 }
-.sidebar li{
+.sidebar li {
     list-style: none;
     padding: 10px 5px;
 }
-.sidebar li:hover{
-    background-color: rgba(218, 218, 218, 0.515);
+.sidebar li:hover {
+    background-color: rgba(217, 217, 217, 0.518);
     border-radius: 10px;
     margin: 0;
 }
-.sidebar h5{
+.sidebar h5 {
     font-size: 24px;
     font-weight: 800;
     color: white;

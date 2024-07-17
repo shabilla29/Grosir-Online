@@ -1,0 +1,77 @@
+*{
+    font-family: 'Poopins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: rgb(187, 187, 187); */
+}
+main{
+    background-color: #DAD3BE;
+    min-height: 100vh;
+    overflow:hidden;
+}
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(254, 44, 44, 0.708);
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    top: -5px;
+    right: -10px;
+    padding:2px 5px;;
+}
+ .notif{
+    position: relative;
+    display: inline-block;
+ }
+
+ .fa-bag-shopping{
+    font-size: 24px;
+    color: rgba(249, 249, 249, 0.686);
+ }
+
+ .fa-bag-shopping:hover {
+    color: rgba(255, 255, 255, 0.867);
+}
+
+section{
+    min-height: 80vh;
+}
+
+/* style footer */
+footer{
+    position: static;
+    bottom: 0;
+    background-color: #254336;
+    color: white;
+}
+
+
+/* sidebar */
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 97vh;  
+
+}
+.sidebar a{
+    text-decoration: none;
+    color: white;
+}
+.sidebar li{
+    list-style: none;
+    padding: 10px 5px;
+}
+.sidebar li:hover{
+    background-color: rgba(218, 218, 218, 0.515);
+    border-radius: 10px;
+    margin: 0;
+}
+.sidebar h5{
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+}
